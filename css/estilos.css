@@ -1,0 +1,358 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p{
+    font-size: medium;
+    font-style:italic;
+}
+span{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.section {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    padding: 100px 0;
+   
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Espaça o conteúdo uniformemente */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.image-container {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.image-container img {
+    max-width: 70%;
+    display: block; /* Remove o espaço extra abaixo da imagem */
+}
+
+.text-container {
+    flex: 1; /* Ocupa o espaço disponível */
+    text-align: center; /* Alinhar texto ao centro */
+}
+
+.sobre-container {
+    text-align: left; /* Alinha o texto à esquerda no contêiner */
+}
+
+.highlight {
+    font-size: 2em; /* Tamanho de fonte maior para dar ênfase */
+    font-weight: bold; /* Peso da fonte em negrito para dar ênfase */
+    color: #007bff; /* Cor azul para dar ênfase */
+    margin-bottom: 20px; /* Adicione algum espaço abaixo do título */
+}
+
+.sobre-text {
+    margin-bottom: 20px; /* Adicione algum espaço abaixo do texto sobre */
+}
+
+.social-media-icons {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Centralizar os ícones de mídia social horizontalmente */
+}
+
+.social-icon {
+    margin: 0 10px; /* Adiciona espaço entre ícones de mídia social */
+}
+
+.social-icon img {
+    width: 30px; /* Ajusta o tamanho do ícone conforme necessário */
+    height: 30px;
+    transition: transform 0.3s ease;/* Adiciona efeito de transição */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+
+}
+
+
+
+
+
+
+/* Estilos para a seção Hobbies e Soft Skills */
+.section2 {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding-top: 100px; /* Ajuste conforme necessário */
+    
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center; /* Centraliza as divs horizontalmente */
+    flex-wrap: wrap; /* Permitir que divs passem para a próxima linha, se necessário */
+}
+
+.image-item {
+    flex: 0 0 25%; /* Cada item ocupa 25% da largura do contêiner */
+    max-width: 25%; /* Largura máxima para cada item */
+    padding: 10px;/* Adicione algum espaço entre os itens */
+}
+
+.image-item img {
+    max-width: 100%;
+    display: block; /* Garanta que as imagens não ultrapassem seu contêiner */
+    margin: 0 auto; /* Centraliza as imagens horizontalmente */
+}
+
+/*Estilos para a seção Educação e Cursos */
+.section3 {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding-top: 100px; /* Ajuste conforme necessário */
+    
+}
+
+.section-title {
+    margin-bottom: 30px;/* Adicione algum espaço abaixo do título */
+    
+    
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.image-item {
+    flex: 0 0 25%;/* Cada item ocupa 25% da largura do contêiner */
+    max-width: 25%;
+    padding: 10px; /* Adicione algum espaço entre os itens */
+    box-sizing: border-box; /* Inclui preenchimento no cálculo da largura */
+}
+
+.image-item img {
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;/* Centraliza as imagens horizontalmente */
+}
+
+
+
+
+h2 {
+    font-size: 2em;
+}
+
+img {
+    max-width: 40%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    padding-top: 10px ;
+}
+
+/* Animações */
+/* Define a configuração inicial para todas as seções */
+.section {
+    opacity: 0; /* Define a opacidade como 0, tornando a seção invisível */
+    transform: translateY(50px); /* Move a seção para baixo 50 pixels */
+    transition: opacity 1s ease, transform 1s ease; /* Define uma transição suave para a opacidade e transformação */
+}
+
+/* Define a configuração de animação de entrada para seções que têm a classe 'fade-in' */
+.section.fade-in {
+    opacity: 1; /* Define a opacidade como 1, tornando a seção visível */
+    transform: translateY(0); /* Reseta a transformação para sua posição original */
+}
+
+/* Define a configuração de animação de entrada para seções que têm a classe 'fade-in-up' */
+.fade-in-up {
+    opacity: 0; /* Define a opacidade como 0, tornando a seção invisível */
+    transform: translateY(50px); /* Move a seção para baixo 50 pixels */
+}
+
+.fade-in-up.fade-in {
+    opacity: 1; /* Define a opacidade como 1, tornando a seção visível */
+    transform: translateY(0); /* Reseta a transformação para sua posição original */
+    transition: opacity 1s ease, transform 1s ease; /* Define uma transição suave para a opacidade e transformação */
+}
+
+/* Define a configuração de animação de entrada para seções que têm a classe 'fade-in-down' */
+.fade-in-down {
+    opacity: 0; /* Define a opacidade como 0, tornando a seção invisível */
+    transform: translateY(-50px); /* Move a seção para cima 50 pixels */
+}
+
+.fade-in-down.fade-in {
+    opacity: 1; /* Define a opacidade como 1, tornando a seção visível */
+    transform: translateY(0); /* Reseta a transformação para sua posição original */
+    transition: opacity 1s ease, transform 1s ease; /* Define uma transição suave para a opacidade e transformação */
+}
+
+/* Define a configuração de animação de entrada para seções que têm a classe 'fade-in-left' */
+.fade-in-left {
+    opacity: 0; /* Define a opacidade como 0, tornando a seção invisível */
+    transform: translateX(-50px); /* Move a seção para a esquerda 50 pixels */
+}
+
+.fade-in-left.fade-in {
+    opacity: 1; /* Define a opacidade como 1, tornando a seção visível */
+    transform: translateX(0); /* Reseta a transformação para sua posição original */
+    transition: opacity 1s ease, transform 1s ease; /* Define uma transição suave para a opacidade e transformação */
+}
+
+/* Define a configuração de animação de entrada para seções que têm a classe 'fade-in-right' */
+.fade-in-right {
+    opacity: 0; /* Define a opacidade como 0, tornando a seção invisível */
+    transform: translateX(50px); /* Move a seção para a direita 50 pixels */
+}
+
+.fade-in-right.fade-in {
+    opacity: 1; /* Define a opacidade como 1, tornando a seção visível */
+    transform: translateX(0); /* Reseta a transformação para sua posição original */
+    transition: opacity 1s ease, transform 1s ease; /* Define uma transição suave para a opacidade e transformação */
+}
+
+
+/* Estilos do formulário */
+form {
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+
+  /* Resposividade da pagina*/
+
+/* Para telas menores que 768px (tablets típicos) */
+@media (max-width: 768px) {
+    header {
+      text-align: center;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li {
+      margin-bottom: 10px;
+    }
+   
+    .about-container {
+        text-align: center;
+      }
+
+     .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    
+      }
+
+      .content {
+        flex-direction: column-reverse;
+      }
+
+      #contact-form input,
+    #contact-form textarea {
+      width: 100%;
+    }
+
+
+    }
+  
+  
+  /* Para telas menores que 576px (smartphones típicos) */
+  @media (max-width: 576px) {
+    header h1 {
+      font-size: 24px;
+    }
+    nav ul li {
+      margin-bottom: 8px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+      }
+      .about-text {
+        font-size: 14px;
+      }
+
+      .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .about-text {
+        font-size: 14px;
+      }
+      #contact-form input,
+      #contact-form textarea {
+        font-size: 14px;
+      }
+  }
+
+
+  
+  
+
+
+  
+  
+
+  
+  
